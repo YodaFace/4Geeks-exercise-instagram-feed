@@ -5,24 +5,23 @@ body {
     }
 
 .entire-card{
-    background-color: blue;
+    background-color: rgb(237, 237, 241);
     width:600px; 
     margin:auto;
     }
 
 .card-header{
     display:flex; 
+    flex-direction: row;
     justify-content: space-between; 
     padding: 10px;
     }
 
-.ch-icon-left {float:left; width:10%; padding-left: 10px; display:flex; justify-content: flex-start;}
+.ch-icon-left {flex: 10%; padding-left: 10px;}
 
-.ch-icon-left div {padding: 0px 5px;}
+.header-text {flex: 90%; padding-left: 10px; }
 
-card-header > p {font-size:1vw; }
-
-.ch-icon-right {float:right; width:5%;}
+.ch-icon-right {flex: 1%; float: right;}
 
 .card-center{
     max-width: 600px;
@@ -31,36 +30,22 @@ card-header > p {font-size:1vw; }
 
 .card-center img {max-width: 600px;}
 
+.card-footer {padding: 25px 10px;}
 
 .card-footer-controls{
     display:flex; 
-    justify-content: space-between; }
-
-
-/* 
-.card-header {height: 50px; background-color: white;}
-    .icon fab fa-html5 fa-lg {
-        position: relative;
-        width: 33.333%;
-        padding-top:25px; 
+    justify-content: space-between;
     }
-    .html5{width: 33.333%;}
+ 
+.card-footer-controls-right {padding-right:10px;}  
 
-.card-header i {
-    font-size: 30px;
+.card-footer-updates{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start; 
 }
+.card-footer-updates div {padding-left: 10px;}
 
-.card-body { 
-    width: 100%;
-    height: 600px;
-    }
+.card-footer-comment {padding: 10px; padding-bottom: 25px;}
 
-
-.card-stats {padding: 10px;}
-
-.comments {padding: 10px;}
-
-.fa-ellipsis-v {float:right;} 
-
-*/
 
